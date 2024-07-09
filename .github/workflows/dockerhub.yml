@@ -42,4 +42,4 @@ jobs:
           context: .
           file: ./requirements/Dockerfile
           push: true
-          tags: nasanccs/vhr-cloudmask:latest
+          tags: nasanccs/super-resolution-sst:latest
