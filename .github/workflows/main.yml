@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Free Disk Space (Ubuntu)
+    - name: Free Disk Space (https://github.com/marketplace/actions/free-disk-space-ubuntu)
       uses: jlumbroso/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
@@ -21,3 +21,11 @@ jobs:
         large-packages: true
         docker-images: true
         swap-storage: true
+        
+    - name: free disk space (https://github.com/jens-maus/RaspberryMatic/blob/d5044bef3307bc61166377c162569de1a61cf332/.github/workflows/ci.yml#L34-L40)
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
