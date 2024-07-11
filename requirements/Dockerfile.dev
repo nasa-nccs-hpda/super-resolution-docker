@@ -1,5 +1,5 @@
 FROM nasanccs/pytorch-caney:latest
-LABEL maintainer="jordan.a.caraballo-vega@nasa.gov"
+LABEL maintainer="glenn.s.tamkin@nasa.gov"
 
 ENV TFC_VERSION=0.1.1
 ENV VHR_CLOUDMASK_VERSION=main
