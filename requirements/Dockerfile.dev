@@ -1,4 +1,4 @@
-FROM nasanccs/tensorflow-caney:latest
+FROM nasanccs/pytorch-caney:latest
 LABEL maintainer="jordan.a.caraballo-vega@nasa.gov"
 
 ENV TFC_VERSION=0.1.1
