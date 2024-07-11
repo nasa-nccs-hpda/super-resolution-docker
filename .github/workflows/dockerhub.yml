@@ -29,6 +29,14 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - 
+        name: free disk space
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h
+      - 
         name: Lower github-runner storage
         run: |
           sudo rm -rf /usr/share/dotnet
