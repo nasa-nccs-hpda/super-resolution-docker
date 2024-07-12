@@ -11,8 +11,5 @@ ENV VHR_CLOUDMASK_VERSION=main
 
 RUN pip install hydra-core
 
-RUN pip install git+https://github.com/dshean/pygeotools.git@master \
-        git+https://github.com/nasa-nccs-hpda/super-resolution-sst.git@main
-
 HEALTHCHECK NONE
 ENTRYPOINT [""]
