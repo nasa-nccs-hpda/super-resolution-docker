@@ -29,3 +29,5 @@ jobs:
         sudo rm -f /swapfile
         sudo apt clean
         df -h
+
+        
