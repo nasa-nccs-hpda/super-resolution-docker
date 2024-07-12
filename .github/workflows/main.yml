@@ -29,5 +29,3 @@ jobs:
         sudo rm -f /swapfile
         sudo apt clean
         df -h
-        docker rmi $(docker image ls -aq)
-        df -h
