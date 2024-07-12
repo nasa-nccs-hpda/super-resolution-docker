@@ -21,7 +21,6 @@ jobs:
         large-packages: true
         docker-images: true
         swap-storage: true
-        df -h
         
     - name: free disk space (https://github.com/jens-maus/RaspberryMatic/blob/d5044bef3307bc61166377c162569de1a61cf332/.github/workflows/ci.yml#L34-L40)
       run: |
