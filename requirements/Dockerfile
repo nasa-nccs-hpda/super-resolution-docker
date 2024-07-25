@@ -9,6 +9,8 @@ LABEL maintainer="glenn.s.tamkin@nasa.gov"
 ENV TFC_VERSION=0.1.1
 ENV VHR_CLOUDMASK_VERSION=main
 
+RUN pip install warp-lang
+
 RUN pip install ipykernel
 
 RUN pip install nvidia-modulus
