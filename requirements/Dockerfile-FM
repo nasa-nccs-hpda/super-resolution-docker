@@ -7,6 +7,7 @@ ARG FROM_IMAGE=nvcr.io/nvidia/modulus/modulus
 FROM ${FROM_IMAGE}:${VERSION_DATE}
 LABEL maintainer="glenn.s.tamkin@nasa.gov" 
 
+RUN pip install cdsapi
 # ENV TFC_VERSION=0.1.1
 # ENV VHR_CLOUDMASK_VERSION=main
 
