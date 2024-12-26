@@ -12,4 +12,7 @@ jobs:
         df -hi
         # ls -alRt /home/runner/runners/
         ls -alt ~
+        du -sh ~
         du -sh /home/runner/runners/*
+        whoami
+        env
