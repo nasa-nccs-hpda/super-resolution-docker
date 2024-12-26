@@ -15,4 +15,8 @@ jobs:
         du -sh ~
         du -sh /home/runner/runners/*
         whoami
+        du -sh /home/runner/work/_temp
+        ls -alRt /home/runner/work/_temp
+        du -sh /opt/actionarchivecache
+        ls -alRt /opt/actionarchivecache
         env
