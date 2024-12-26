@@ -11,4 +11,5 @@ jobs:
         df -h
         df -hi
         # ls -alRt /home/runner/runners/
+        ls -alt ~
         du -sh /home/runner/runners/*
