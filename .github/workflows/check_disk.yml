@@ -9,3 +9,6 @@ jobs:
     - name: check disk space 
       run: |
         df -h
+        df -hi
+        ls -alRt /home/runner/runners/
+        du -s /home/runner/runners/*
