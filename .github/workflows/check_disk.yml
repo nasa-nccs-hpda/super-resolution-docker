@@ -10,7 +10,7 @@ jobs:
       run: |
         df -h
         df -hi
-        # ls -alRt /home/runner/runners/
+        ls -alRt /home/runner/runners/
         ls -alt ~
         du -sh ~
         du -sh /home/runner/runners/*
@@ -19,4 +19,7 @@ jobs:
         ls -alRt /home/runner/work/_temp
         du -sh /opt/actionarchivecache
         ls -alRt /opt/actionarchivecache
+        rm -rf /opt/actionarchivecache/*
         env
+        df -h
+        df -hi
