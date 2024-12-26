@@ -4,7 +4,8 @@ ARG FROM_IMAGE=nvcr.io/nvidia/modulus/modulus
 
 # Import RAPIDS container as the BASE Image (cuda base image)
 #FROM ${FROM_IMAGE}:${VERSION_DATE}-py3
-FROM ${FROM_IMAGE}:${VERSION_DATE}
+FROM nasanccs/qefm:latest
+#FROM ${FROM_IMAGE}:${VERSION_DATE}
 LABEL maintainer="glenn.s.tamkin@nasa.gov" 
 
 RUN pip install cdsapi
