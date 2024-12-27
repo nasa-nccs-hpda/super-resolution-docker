@@ -7,9 +7,9 @@ FROM ${FROM_IMAGE}:${VERSION_DATE}
 LABEL maintainer="glenn.s.tamkin@nasa.gov" 
 
 # GraphCast dependencies
+RUN pip install git+git://github.com/deepmind/jraph.git
 RUN pip install jax
 RUN pip install Cartopy
-RUN pip install jax
 RUN pip install chex
 RUN pip install dm-haiku
 
