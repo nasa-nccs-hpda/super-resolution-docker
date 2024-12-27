@@ -63,6 +63,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./requirements/Dockerfile-FM
+          file: ./requirements/Dockerfile-FM.core
           push: true
-          tags: nasanccs/qefm-cdsapi:latest
+          tags: nasanccs/qefm-core:latest
