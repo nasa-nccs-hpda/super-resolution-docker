@@ -1,0 +1,20 @@
+# Arguments to pass to the image
+ARG VERSION_DATE=24.09
+ARG FROM_IMAGE=nvcr.io/nvidia/modulus/modulus
+
+# Import NVIDIA Modulus container as the BASE Image (Modulus base image)
+FROM ${FROM_IMAGE}:${VERSION_DATE}
+LABEL maintainer="glenn.s.tamkin@nasa.gov" 
+
+# GraphCast dependencies
+RUN pip install jax
+RUN pip install Cartopy
+RUN pip install jax
+RUN pip install chex
+RUN pip install dm-haiku
+
+# Aurora dependencies
+RUN pip install cdsapi
+
+HEALTHCHECK NONE
+ENTRYPOINT [""]
