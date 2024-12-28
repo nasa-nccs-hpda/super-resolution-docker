@@ -13,6 +13,7 @@ RUN pip install Cartopy
 RUN pip install chex
 RUN pip install dm-haiku
 RUN pip install trimesh
+RUN pip install Rtree
 
 # Aurora dependencies
 RUN pip install cdsapi
